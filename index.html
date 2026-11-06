@@ -125,6 +125,12 @@
     .quote blockquote { font-size: clamp(1.2rem, 3.5vw, 1.8rem); max-width: 700px; margin: 0 auto 12px; line-height: 1.4; }
     .quote cite { font-style: normal; font-size: .72rem; letter-spacing: 3px; color: var(--muted); }
 
+
+    .donate { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; }
+    .donate img { width: 230px; max-width: 100%; border-radius: 18px; display: block; background: #fff; box-shadow: 0 12px 40px rgba(139,92,246,.25); }
+    .donate h3 { font-size: 1.3rem; margin-bottom: 8px; }
+    .donate .note { font-size: .8rem; color: var(--muted); margin-top: 6px; }
+    @media (max-width: 640px) { .donate { grid-template-columns: 1fr; justify-items: center; text-align: center; } }
     .links { display: flex; gap: 12px; flex-wrap: wrap; }
 
     footer { padding: 40px 0 110px; text-align: center; color: var(--muted); font-size: .85rem; position: relative; z-index: 2; border-top: 1px solid var(--line); }
@@ -197,6 +203,7 @@
         <li><a href="#about">Giới thiệu</a></li>
         <li><a href="#skills">Kỹ năng</a></li>
         <li><a href="#projects">Dự án</a></li>
+        <li><a href="#donate">Donate</a></li>
         <li><a href="#contact">Liên hệ</a></li>
       </ul>
       <a class="pill" href="#contact">Kết nối ↗</a>
@@ -316,9 +323,25 @@
       <cite>— MY PERSONAL PHILOSOPHY</cite>
     </div>
 
+    <section class="sec" id="donate">
+      <div class="wrap reveal">
+        <div class="sec-label">04 / DONATE</div>
+        <h2>Ủng hộ <span class="grad">mình nhé.</span></h2>
+        <p class="desc">Nếu bạn thấy mình có thể làm điều lớn lao có thể donate cho mìn có kinh phí ạa.</p>
+        <div class="panel donate">
+          <img src="qr.jpeg" alt="Mã QR chuyển khoản donate" loading="lazy" />
+          <div>
+            <h3>Ủng hộ new dev nhỏ nhaa :&gt; 🫪</h3>
+            <p>Chân thành cảm ơn mọi người!</p>
+            <p class="note">Không bắt buộc đâu nha, tui cảm ơn đã ghé qua! Cam sa mi ta :33 ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="sec" id="contact">
       <div class="wrap reveal">
-        <div class="sec-label">04 / CONTACT</div>
+        <div class="sec-label">05 / CONTACT</div>
         <h2>Cùng tạo ra <span class="grad">điều thú vị.</span></h2>
         <p class="desc">Có ý tưởng, cần làm bot hay chỉ muốn trò chuyện? Hãy kết nối với mình nhé.</p>
         <div class="links">
